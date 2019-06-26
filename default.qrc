@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="iconpack">
+    <file>assets/svgs/summary.svg</file>
+    <file>assets/svgs/suggestions.svg</file>
+    <file>assets/svgs/sections.svg</file>
+    <file>assets/svgs/search.svg</file>
+    <file>assets/svgs/remove.svg</file>
+    <file>assets/svgs/related.svg</file>
+    <file>assets/svgs/references.svg</file>
+    <file>assets/svgs/locale.svg</file>
+    <file>assets/svgs/images.svg</file>
+    <file>assets/svgs/donate.svg</file>
+    <file>assets/svgs/documentation.svg</file>
+    <file>assets/svgs/content.svg</file>
+    <file>assets/svgs/about.svg</file>
+  </qresource>
+</RCC>

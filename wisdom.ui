@@ -1,0 +1,1168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>720</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>1280</width>
+    <height>720</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:white;</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="tex_tile">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>91</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Akzidenz Grotesk Light</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+background-color:rgba(0,0,0,0);</string>
+    </property>
+    <property name="text">
+     <string>Wisdom</string>
+    </property>
+   </widget>
+   <widget class="QFrame" name="bar_tile">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1280</width>
+      <height>50</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>1280</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="maximumSize">
+     <size>
+      <width>1280</width>
+      <height>50</height>
+     </size>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:green;
+border-color:white;
+border:none;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLineEdit" name="box_sear">
+     <property name="geometry">
+      <rect>
+       <x>1040</x>
+       <y>10</y>
+       <width>228</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Akzidenz Grotesk Light</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:black;
+border-radius: 14px;
+background-color:rgba(255,255,255,0.75);</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frm_cont">
+    <property name="geometry">
+     <rect>
+      <x>268</x>
+      <y>228</y>
+      <width>744</width>
+      <height>450</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,0.10);
+color:black;
+border: 2px green;
+border-radius:14px;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="head_cont">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>10</y>
+       <width>721</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Akzidenz Grotesk Light</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgba(0,0,0,0);
+color:green;</string>
+     </property>
+     <property name="text">
+      <string>Welcome to Wisdom!</string>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="box_cont">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>40</y>
+       <width>734</width>
+       <height>400</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Akzidenz Grotesk Light</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgba(0,0,0,0);</string>
+     </property>
+     <property name="readOnly">
+      <bool>true</bool>
+     </property>
+     <property name="placeholderText">
+      <string>Wisdom is a user-friendly QT based application which fetches information from Wikipedia based on user's request. It puts into the use the official Wikipedia API for Python and PyQT5 in order to make this possible. This application is in active development to incorporate multimedia content as well.</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frm_sgst">
+    <property name="geometry">
+     <rect>
+      <x>1022</x>
+      <y>228</y>
+      <width>248</width>
+      <height>451</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,0.10);
+color:black;
+border: 2px green;
+border-radius:14px;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="head_sgst">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>10</y>
+       <width>231</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Akzidenz Grotesk Light</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgba(0,0,0,0);
+color:green;</string>
+     </property>
+     <property name="text">
+      <string>Suggestions</string>
+     </property>
+    </widget>
+    <widget class="QPlainTextEdit" name="box_sgst">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>40</y>
+       <width>238</width>
+       <height>400</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Akzidenz Grotesk Light</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgba(0,0,0,0);</string>
+     </property>
+     <property name="placeholderText">
+      <string>These are the collection of articles that are related to the one you asked for and we suggest you.</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="bar_stat">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>690</y>
+      <width>1280</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:green;
+border-color:white;
+border:none;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QLabel" name="art_url_disp">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>5</y>
+       <width>640</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Akzidenz Grotesk Light</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background-color:rgba(0,0,0,0);</string>
+     </property>
+     <property name="text">
+      <string>Visit https://en.wikipedia.org/wiki/Wikipedia for more</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="art_nam_disp">
+     <property name="geometry">
+      <rect>
+       <x>635</x>
+       <y>5</y>
+       <width>640</width>
+       <height>20</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Akzidenz Grotesk Light</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">color:white;
+background-color:rgba(0,0,0,0);</string>
+     </property>
+     <property name="text">
+      <string>Developed with love by t0xic0der</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QFrame" name="frm_smry">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>228</y>
+      <width>248</width>
+      <height>450</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color:rgba(0,0,0,0.10);
+color:black;
+border: 2px green;
+border-radius:14px;</string>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::StyledPanel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <widget class="QPlainTextEdit" name="box_smry">
+     <property name="geometry">
+      <rect>
+       <x>5</x>
+       <y>40</y>
+       <width>238</width>
+       <height>400</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Akzidenz Grotesk Light</family>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgba(0,0,0,0);</string>
+     </property>
+     <property name="placeholderText">
+      <string>This section is for those who do not have much time but still wish to have all the information they can.</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="head_smry">
+     <property name="geometry">
+      <rect>
+       <x>8</x>
+       <y>10</y>
+       <width>231</width>
+       <height>25</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Akzidenz Grotesk Light</family>
+       <pointsize>16</pointsize>
+      </font>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color:rgba(0,0,0,0);
+color:green;</string>
+     </property>
+     <property name="text">
+      <string>Summary</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="btn_clar">
+    <property name="geometry">
+     <rect>
+      <x>1208</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+border-radius: 14px;
+background-color:rgba(0,0,0,0);
+border:none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="default.qrc">
+      <normaloff>:/iconpack/assets/svgs/remove.svg</normaloff>:/iconpack/assets/svgs/remove.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_find">
+    <property name="geometry">
+     <rect>
+      <x>1236</x>
+      <y>10</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+border-radius: 14px;
+background-color:rgba(0,0,0,0);
+border:none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="default.qrc">
+      <normaloff>:/iconpack/assets/svgs/search.svg</normaloff>:/iconpack/assets/svgs/search.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>25</width>
+      <height>25</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tex_name">
+    <property name="geometry">
+     <rect>
+      <x>268</x>
+      <y>58</y>
+      <width>744</width>
+      <height>30</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Akzidenz Grotesk Light</family>
+      <pointsize>20</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:green;
+background-color:rgba(0,0,0,0);</string>
+    </property>
+    <property name="text">
+     <string>Welcome to Wisdom!</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tex_wiki">
+    <property name="geometry">
+     <rect>
+      <x>268</x>
+      <y>95</y>
+      <width>744</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Akzidenz Grotesk Light</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:green;
+background-color:rgba(0,0,0,0.10);
+border-radius:8px;</string>
+    </property>
+    <property name="text">
+     <string>  From Wikipedia, the free encyclopedia</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nam_reid">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>170</y>
+      <width>90</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Akzidenz Grotesk Light</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:green;
+background-color:rgba(0,0,0,0.10);
+border-radius:8px;</string>
+    </property>
+    <property name="text">
+     <string>Revision ID</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="nam_paid">
+    <property name="geometry">
+     <rect>
+      <x>922</x>
+      <y>120</y>
+      <width>90</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Akzidenz Grotesk Light</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:green;
+background-color:rgba(0,0,0,0.10);
+border-radius:8px;</string>
+    </property>
+    <property name="text">
+     <string>Parent ID</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="val_paid">
+    <property name="geometry">
+     <rect>
+      <x>892</x>
+      <y>140</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Akzidenz Grotesk Light</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:green;
+background-color:rgba(0,0,0,0);</string>
+    </property>
+    <property name="text">
+     <string>UNDEFINED</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="val_reid">
+    <property name="geometry">
+     <rect>
+      <x>892</x>
+      <y>190</y>
+      <width>120</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Akzidenz Grotesk Light</family>
+      <pointsize>16</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:green;
+background-color:rgba(0,0,0,0);</string>
+    </property>
+    <property name="text">
+     <string>UNDEFINED</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_loca">
+    <property name="geometry">
+     <rect>
+      <x>268</x>
+      <y>120</y>
+      <width>64</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Change the content language&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h3&gt;Locale settings&lt;/h3&gt;&lt;p&gt;Change the content language&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+border-radius: 14px;
+background-color:rgba(0,0,0,0);
+border:none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="default.qrc">
+      <normaloff>:/iconpack/assets/svgs/locale.svg</normaloff>:/iconpack/assets/svgs/locale.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_abut">
+    <property name="geometry">
+     <rect>
+      <x>688</x>
+      <y>120</y>
+      <width>64</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Learn more about me&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h3&gt;About me&lt;/h3&gt;&lt;p&gt;Learn more about me&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+border-radius: 14px;
+background-color:rgba(0,0,0,0);
+border:none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="default.qrc">
+      <normaloff>:/iconpack/assets/svgs/about.svg</normaloff>:/iconpack/assets/svgs/about.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_dnat">
+    <property name="geometry">
+     <rect>
+      <x>548</x>
+      <y>120</y>
+      <width>64</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Donate to Wikipedia&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h3&gt;Make donation&lt;/h3&gt;&lt;p&gt;Donate to Wikipedia&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+border-radius: 14px;
+background-color:rgba(0,0,0,0);
+border:none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="default.qrc">
+      <normaloff>:/iconpack/assets/svgs/donate.svg</normaloff>:/iconpack/assets/svgs/donate.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_rfer">
+    <property name="geometry">
+     <rect>
+      <x>478</x>
+      <y>120</y>
+      <width>64</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;View referred articles here&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h3&gt;View references&lt;/h3&gt;&lt;p&gt;View referred articles here&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+border-radius: 14px;
+background-color:rgba(0,0,0,0);
+border:none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="default.qrc">
+      <normaloff>:/iconpack/assets/svgs/references.svg</normaloff>:/iconpack/assets/svgs/references.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_docs">
+    <property name="geometry">
+     <rect>
+      <x>618</x>
+      <y>120</y>
+      <width>64</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Learn how this tool works&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h3&gt;Read documentation&lt;/h3&gt;&lt;p&gt;Learn how this tool works&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+border-radius: 14px;
+background-color:rgba(0,0,0,0);
+border:none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="default.qrc">
+      <normaloff>:/iconpack/assets/svgs/documentation.svg</normaloff>:/iconpack/assets/svgs/documentation.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_imgs">
+    <property name="geometry">
+     <rect>
+      <x>408</x>
+      <y>120</y>
+      <width>64</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Navigate to image sources&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h3&gt;Image sources&lt;/h3&gt;&lt;p&gt;Navigate to image sources&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+border-radius: 14px;
+background-color:rgba(0,0,0,0);
+border:none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="default.qrc">
+      <normaloff>:/iconpack/assets/svgs/images.svg</normaloff>:/iconpack/assets/svgs/images.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_relt">
+    <property name="geometry">
+     <rect>
+      <x>338</x>
+      <y>120</y>
+      <width>64</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;View related articles here&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h3&gt;Related articles&lt;/h3&gt;&lt;p&gt;View related articles here&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+border-radius: 14px;
+background-color:rgba(0,0,0,0);
+border:none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="default.qrc">
+      <normaloff>:/iconpack/assets/svgs/related.svg</normaloff>:/iconpack/assets/svgs/related.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btn_back">
+    <property name="geometry">
+     <rect>
+      <x>758</x>
+      <y>120</y>
+      <width>64</width>
+      <height>64</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="toolTip">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;View the content again&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="whatsThis">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;h3&gt;Go back&lt;/h3&gt;&lt;p&gt;View the content again&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:white;
+border-radius: 14px;
+background-color:rgba(0,0,0,0);
+border:none;</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="icon">
+     <iconset resource="default.qrc">
+      <normaloff>:/iconpack/assets/svgs/remove.svg</normaloff>:/iconpack/assets/svgs/remove.svg</iconset>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>40</width>
+      <height>40</height>
+     </size>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tex_loca">
+    <property name="geometry">
+     <rect>
+      <x>268</x>
+      <y>193</y>
+      <width>64</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Akzidenz Grotesk Light</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:green;
+background-color:rgba(0,0,0,0.10);
+border-radius:8px;</string>
+    </property>
+    <property name="text">
+     <string>Locale</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tex_relt">
+    <property name="geometry">
+     <rect>
+      <x>338</x>
+      <y>193</y>
+      <width>64</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Akzidenz Grotesk Light</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:green;
+background-color:rgba(0,0,0,0.10);
+border-radius:8px;</string>
+    </property>
+    <property name="text">
+     <string>Related</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tex_imgs">
+    <property name="geometry">
+     <rect>
+      <x>408</x>
+      <y>193</y>
+      <width>64</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Akzidenz Grotesk Light</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:green;
+background-color:rgba(0,0,0,0.10);
+border-radius:8px;</string>
+    </property>
+    <property name="text">
+     <string>Images</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tex_rfer">
+    <property name="geometry">
+     <rect>
+      <x>478</x>
+      <y>193</y>
+      <width>64</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Akzidenz Grotesk Light</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:green;
+background-color:rgba(0,0,0,0.10);
+border-radius:8px;</string>
+    </property>
+    <property name="text">
+     <string>Refer.</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tex_dnat">
+    <property name="geometry">
+     <rect>
+      <x>548</x>
+      <y>193</y>
+      <width>64</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Akzidenz Grotesk Light</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:green;
+background-color:rgba(0,0,0,0.10);
+border-radius:8px;</string>
+    </property>
+    <property name="text">
+     <string>Donate</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tex_docs">
+    <property name="geometry">
+     <rect>
+      <x>618</x>
+      <y>193</y>
+      <width>64</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Akzidenz Grotesk Light</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:green;
+background-color:rgba(0,0,0,0.10);
+border-radius:8px;</string>
+    </property>
+    <property name="text">
+     <string>Docs</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tex_abut">
+    <property name="geometry">
+     <rect>
+      <x>688</x>
+      <y>193</y>
+      <width>64</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Akzidenz Grotesk Light</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:green;
+background-color:rgba(0,0,0,0.10);
+border-radius:8px;</string>
+    </property>
+    <property name="text">
+     <string>About</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tex_back">
+    <property name="geometry">
+     <rect>
+      <x>758</x>
+      <y>193</y>
+      <width>64</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Akzidenz Grotesk Light</family>
+      <pointsize>10</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:green;
+background-color:rgba(0,0,0,0.10);
+border-radius:8px;</string>
+    </property>
+    <property name="text">
+     <string>Back</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>bar_tile</zorder>
+   <zorder>tex_tile</zorder>
+   <zorder>frm_cont</zorder>
+   <zorder>frm_sgst</zorder>
+   <zorder>bar_stat</zorder>
+   <zorder>frm_smry</zorder>
+   <zorder>btn_clar</zorder>
+   <zorder>btn_find</zorder>
+   <zorder>tex_name</zorder>
+   <zorder>tex_wiki</zorder>
+   <zorder>nam_reid</zorder>
+   <zorder>nam_paid</zorder>
+   <zorder>val_paid</zorder>
+   <zorder>val_reid</zorder>
+   <zorder>btn_loca</zorder>
+   <zorder>btn_abut</zorder>
+   <zorder>btn_dnat</zorder>
+   <zorder>btn_rfer</zorder>
+   <zorder>btn_docs</zorder>
+   <zorder>btn_imgs</zorder>
+   <zorder>btn_relt</zorder>
+   <zorder>btn_back</zorder>
+   <zorder>tex_loca</zorder>
+   <zorder>tex_relt</zorder>
+   <zorder>tex_imgs</zorder>
+   <zorder>tex_rfer</zorder>
+   <zorder>tex_dnat</zorder>
+   <zorder>tex_docs</zorder>
+   <zorder>tex_abut</zorder>
+   <zorder>tex_back</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="default.qrc"/>
+ </resources>
+ <connections/>
+</ui>
