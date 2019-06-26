@@ -31,7 +31,7 @@ At this point of time, only a limited set of features work with an unreasonably 
 
 ### Screenshots
 Testing Default
-![Default Screen](wisdom/screenshot/default.png)
+![Default Screen](screenshots/default.png)
 
 Testing Tom Clancy's Ghost Recon Breakpoint
-![Breakpoint Screen](wisdom/screenshot/breakpoint.png)
+![Breakpoint Screen](screenshots/breakpoint.png)
