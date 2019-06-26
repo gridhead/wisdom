@@ -30,3 +30,8 @@ At this point of time, only a limited set of features work with an unreasonably 
 4. **Messed up fontfaces** - At some places, paddings and margins need to be provided judiciously in order to make sure that suspended and headed regions are visible.
 
 ### Screenshots
+Testing Default
+![Default Screen](/screenshot/default.png)
+
+Testing Tom Clancy's Ghost Recon Breakpoint
+![Breakpoint Screen](/screenshot/breakpoint.png)
